@@ -34,10 +34,10 @@ export class AddGunComponent {
 	err => alert(JSON.stringify(err)),
 	() => { 
 	if(this.postResponse._body.indexOf("error") === -1){
-		alert("Uspesno dodavanje sobe");
+		alert("Uspesno dodavanje");
 	    this.router.parent.navigate(['./Home']);
 	 }else{
-		alert("Neuspesno dodavanje sobe");
+		alert("Neuspesno dodavanje");
 	 }
 	 }
 	);
